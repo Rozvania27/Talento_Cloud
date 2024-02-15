@@ -1,0 +1,152 @@
+
+
+body {
+  background-image: linear-gradient(to right, #6b65a1, #464446, #8d8091);
+
+  }
+
+  .box{
+    color: rgb(248, 246, 246);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0,6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 35%;
+    height: 100%;
+  }
+
+  fieldset{
+    border: 2px solid rgb(248, 245, 245);
+  }
+
+  legend{
+    border: 2px solid rgb(248, 247, 247);
+    border: 2px solid ;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(250, 247, 247);
+    background-color: #faf8f8;
+    border-radius: 8px;
+    color: black;
+   }
+
+   .inputBox{
+    position: relative;
+   }
+
+   .inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 100%;
+
+   }
+
+   .labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+   }
+
+   .inputUser:focus ~ .labelInput,
+   .inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 11px;
+    color:  black;
+   }
+
+   #data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+   }
+
+   button{
+   /* background-color: tomato;
+    color: white; */
+    width: 100%;
+    border: none;
+    padding: 15px;    
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+   }
+  /*  button:hover{
+      background-color: rgb(192, 44, 44);
+      color: rgb(248, 242, 242);
+      font-size: 25px;
+
+   } */
+
+ul{
+  width="40px";
+  height="40px";
+ align-items: center;
+ display: flex;
+ justify-content: center;
+
+}
+img{
+  width: 40px;
+  height: 40px;
+}
+
+/* ---------- Estilos dinâmicos Validação formulario---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+label {
+  margin-bottom: .2rem;
+  position: relative;
+}
+
+label:not(:first-of-type){
+  margin-top: 1rem;
+}
+
+input {
+  padding: .2rem .5rem;
+}
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}

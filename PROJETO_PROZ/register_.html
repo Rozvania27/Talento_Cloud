@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de novo colaborador</title>
+    <link rel="stylesheet" href="./register.css"/>
+    <script src="register_.js" defer></script>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+            <legend><b>Formulário de Cadastro</b></legend>
+            
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome Completo:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                <label for="CPF" class="labelInput">Número CPF:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="rg" id="rg" class="inputUser" required>
+                <label for="rg" class="labelInput">Número RG:</label>
+            </div>
+            <p>Sexo:</p>
+            <input type="radio" name="genero" id="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="masculino" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <br><br>
+            <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereço:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+                <label for="estado" class="labelInput">Estado:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required onblur="validacaoEmail(f1.email)">
+                <label for="email" class="labelInput">E-mail:</label>
+                <td>
+                    <div id="msgemail"></div>
+                </td>
+            </div>
+            
+            <br><br>
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                <label for="telefone" class="labelInput">Telefone:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="profissao" id="profissao" class="inputUser" required>
+                <label for="profissao" class="labelInput">Profissão:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="descricao" id="descricao" class="inputUser" required>
+                <label for="descricao" class="labelInput">Descrição atividades:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="ultimo" id="ultimo" class="inputUser" required>
+                <label for="ultimo" class="labelInput">Ultimos trabalhos:</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="password"  name="psw" id="psw"   class="inputUser" required>
+                <label for="psw" class="labelInput"><b>Senha:</b></label>
+                
+            </div>
+           <br><br>
+           <div class="inputBox">
+            <input type="password"  name="psw-repeat" id="psw-repeat" class="inputUser" required>
+            <label for="psw-repeat" class="labelInput"><b>Repetir Senha:</b></label>
+           
+           </div>
+           <div>
+            <p>Inserir imagem.</p>
+           <input type="file" name="arquivos" class="btn btn-success"  accept="image/png, image/jpeg"  multiple />
+           </div>
+           <div>
+            
+	        <p>Por favor, leia os termos de uso antes de continuar.</p>
+	        <input type="checkbox" id="myCheck" name="toggle" onclick="myFunction()" form="toggle">Eu li e concordo com os termos de uso. <p class= "nomeToogle"></p>
+           
+            <div id="modal" style="display:none">
+              <h1>TERMOS DE USO DO SITE: </h1>
+              <h1>"TE ACHEI!"</h1>
+              <p> Bem-vindo ao site "Te Achei", um serviço online de contratação de serviços especializados para o lar. Ao utilizar o site "Te Achei", você concorda com os termos e condições estabelecidos a seguir. Por favor, leia atentamente antes de utilizar o site.</p>  
+              <h2>1. Aceitação dos Termos:</h2>
+              <p>Ao acessar ou usar o site "Te Achei", você concorda em cumprir estes termos de uso. Se você não concorda com estes termos, por favor, não utilize o site.</p>
+              <h2>2.	Descrição do Serviço:</h2>
+              <p>O site "Te Achei" permite que os usuários encontrem e contratem serviços especializados para o lar, tais como eletricistas, encanadores, pintores, entre outros</p>
+              <h2>3.	Uso Aceitável: </h2>
+              <p>Você concorda em utilizar o site "Te Achei" de forma ética e responsável, respeitando as leis aplicáveis e os direitos de terceiros. Você não deve usar o site para qualquer atividade ilegal, fraudulenta ou prejudicial.</p>
+              <h2>4.	Cadastro e Segurança da Conta: </h2>
+              <p>Ao se cadastrar no site "Te Achei", você concorda em fornecer informações precisas e atualizadas. Você é responsável por manter a segurança de sua conta e senha, e por todas as atividades que ocorrerem sob sua conta.</p>
+              <h2>5.	Privacidade:</h2>
+              <p> O site "Te Achei" respeita a privacidade de seus usuários. Ao utilizar o site, você concorda com a coleta e uso de suas informações de acordo com nossa Política de Privacidade.</p>
+              <h2>6.	Propriedade Intelectual: </h2>
+              <p>Todo o conteúdo do site "Te Achei", incluindo textos, imagens, logotipos, e software, é de propriedade do site ou de seus licenciadores, e é protegido por leis de direitos autorais e propriedade intelectual.</p>
+              <h2>7.	Limitação de Responsabilidade: </h2>
+              <p>O site "Te Achei" não se responsabiliza por quaisquer danos diretos, indiretos, incidentais, especiais, consequentes ou punitivos resultantes do uso ou incapacidade de usar o site.</p>
+              <h2>8.	Modificações dos Termos de Uso: </h2>
+              <p>O site "Te Achei" se reserva o direito de modificar estes termos de uso a qualquer momento. As modificações entrarão em vigor imediatamente após sua publicação no site.</p>
+              <p>Ao utilizar o site "Te Achei", você concorda em cumprir estes termos de uso. Se tiver alguma dúvida ou preocupação, entre em contato conosco através dos canais de suporte disponíveis no site.</p>
+              <p>Data vigência: [indeterminado]</p>
+
+            </div>                      
+            </div>
+           <br><br>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <button type="button" name="submit" id="submit" onclick="checa()" disabled>Enviar</button>
+            <br>
+            </fieldset>
+        </form>
+        <br><br>
+        <ul>
+        <img src="./img/volar.png">
+        <a href="./index.html" style="color:white;">Retornar ao menu inicial.</a>
+        </ul>
+        <br><br>
+    </div>
+</body>
+</html>

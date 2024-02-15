@@ -1,0 +1,87 @@
+main{
+    display: flex;
+  
+  }
+
+  body {
+    /*background-image: linear-gradient(to right, maroon, orangered, yellow);*/
+    background-image: linear-gradient(to right, orange, #ffff6a, #ff6c3e);
+  }
+
+
+section div img {
+    border-radius: 15px;
+    border: 2px solid orangered;
+    width: 90%;
+    margin: auto;
+    display: block;
+    
+ }
+ 
+ section div p{
+   text-align: justify;
+ }
+ 
+ .container {
+   position: relative;
+   max-width: 800px; /* Maximum width */
+   margin: 0 auto; /* Center it */
+ }
+ 
+ .container .content {
+   position: absolute; /* Position the background text */
+   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+   background: rgb(0, 0, 0); /* Fallback color */
+   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+   color: #f1f1f1; /* Grey text */
+   width: 80%; /* Full width */
+   padding: 15px; /* Some padding */
+ }
+
+ section {
+    padding: 12px;
+    display: block;
+    text-align:left;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    
+  }
+  
+  section div {
+    background-image: -o-repeating-linear-gradient(orange);
+    margin:   16px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+     
+  }
+  
+  .content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
+
+  .textsection1 h1 h3 p{
+    color: black;
+  }
+  
+  .content{
+    color: white;
+  }
+
+  

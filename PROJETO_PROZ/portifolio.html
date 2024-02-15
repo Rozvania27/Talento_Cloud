@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+ 
+  <!-- Link do nosso arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="stylesheet" href="portifolio.css">
+  <script src="./index.js" defer></script>
+  <script src="portifolio.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!--<link rel="stylesheet" type="text/css" href="css/fonts-icones.css">-->
+  <title>Buscador de serviços gerais para o seu Lar.</title>
+</head>
+
+<body>
+          <!-- Menu lateral-->
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html">Página Inicial</a>
+      <a href="./Blog.html">Blog</a>
+      <a href="./emconstrucao.html">Quem somos</a>
+      <a href="./emconstrucao.html">Mapa do Site</a>
+      <a href="./contato.html">Fale Conosco</a>
+    </div>
+    
+    <!-- Use qualquer elemento para abrir o sidenav -->
+    <span style="font-size: 35px;cursor:pointer;align-items: center;" onclick="openNav()"><img src="./img/3tracospretoquadrado.png" alt="Menu Iniciar"></span>
+    
+    <!-- Adicione todo o conteúdo da página dentro deste div se quiser que a navegação lateral empurre o conteúdo da página para a direita (não usado se você quiser apenas que a navegação lateral fique no topo da página -->
+    <div id="main">
+    <nav>
+      <div class="box">
+        <div class="icon">
+          <i class='bx bx-menu open'></i>
+          <i class='bx bx-x close' ></i>
+        </div>
+      </div>
+      <div class="social_media">
+
+        <a href="#" title="Instagram">
+
+            <div class="balloon">
+                <span class="name">Instagram</span>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/></svg>
+
+        </a>
+
+        <a class="facebook" href="#" title="Facebook">
+
+            <div class="balloon">
+                <span class="name">Facebook</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+            
+
+        </a>
+
+
+        <a class="whatsapp" href="#" title="Whatsapp">
+
+            <div class="balloon">
+                <span class="name">Whatsapp</span>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+
+        </a>
+
+        <a class="telegram" href="#" title="Telegram">
+
+          <div class="balloon">
+              <span class="name">Telegram</span>
+          </div>
+
+          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-5" d="M12,0c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12Zm0,2c5.514,0 10,4.486 10,10c0,5.514 -4.486,10 -10,10c-5.514,0 -10,-4.486 -10,-10c0,-5.514 4.486,-10 10,-10Zm2.692,14.889c0.161,0.115 0.368,0.143 0.553,0.073c0.185,-0.07 0.322,-0.228 0.362,-0.42c0.435,-2.042 1.489,-7.211 1.884,-9.068c0.03,-0.14 -0.019,-0.285 -0.129,-0.379c-0.11,-0.093 -0.263,-0.12 -0.399,-0.07c-2.096,0.776 -8.553,3.198 -11.192,4.175c-0.168,0.062 -0.277,0.223 -0.271,0.4c0.006,0.177 0.125,0.33 0.296,0.381c1.184,0.354 2.738,0.847 2.738,0.847c0,0 0.725,2.193 1.104,3.308c0.047,0.139 0.157,0.25 0.301,0.287c0.145,0.038 0.298,-0.001 0.406,-0.103c0.608,-0.574 1.548,-1.461 1.548,-1.461c0,0 1.786,1.309 2.799,2.03Zm-5.505,-4.338l0.84,2.769l0.186,-1.754c0,0 3.243,-2.925 5.092,-4.593c0.055,-0.048 0.062,-0.13 0.017,-0.188c-0.045,-0.057 -0.126,-0.071 -0.188,-0.032c-2.143,1.368 -5.947,3.798 -5.947,3.798Z"/></svg>
+      </a>
+
+    </div>
+    </nav>
+      ...
+    </div>
+    
+  </header>
+  <main>
+    
+    <!--====== Gallery Section ======-->
+<section id="gallery">
+  <div class="container">
+<h1>Filtros por Categoria</h1>
+      <!-- Filterable Gallery -->
+      <ul class="gallery_tabs">
+          <li class="active" data-filter="all">Todos</li>
+          <li data-filter="construcao">Construção</li>
+          <li data-filter="eletricista">Eletricista</li>
+          <li data-filter="encanador">Encanador</li>
+          <li data-filter="jardinagem">Jardinagem</li>
+          <li data-filter="piscinas">Piscinas</li>
+          <li data-filter="cozinha">Cozinha</li>
+          <li data-filter="casalimp">Casa</li>
+          <li data-filter="pets">Pets</li>
+      </ul>
+
+      <div class="gallery_wrapper" >
+          <div class="gallery_item construcao">
+              <button id="myBtn"><img src="./files/construcao111-1600x900.jpg"  alt="Jose Carlos" onclick="mostrarDetalhes('construcaoJoseCarlos')" style="width: 100%;"></button>
+                  <div class="transparency" >
+                  <h1>Construção e Reforma</h1>
+                  <p>Jose Carlos - Cód:13528</p>
+                  </div>    
+          </div>
+
+          <div class="gallery_item jardinagem">
+              <img src="./files/jardinagem111.jpg" alt="Antonio Carlos"  style="width: 100%;">
+              <div class="transparency">
+                <h1>jardinagem e Paisagismo</h1>
+                <p>Antonio Carlos - Cód:12022</p>
+                </div>
+          </div>
+
+          <div class="gallery_item eletricista">
+            <button id="myBtn"> <img src="./files/eletricistas113-1600x900.jpg" alt="Silvano Santos" onclick="mostrarDetalhes('eletricistaSilvanoSantos')"" style="width: 100%;"></button>
+                  <div class="transparency">
+                    <h1>Eletricistas</h1>
+                    <p>Silvano Santos - Cód:13025</p>
+                    </div>
+          </div>
+
+          <div class="gallery_item encanador">
+              <img src="./files/encanador 115.jpg" alt="Eduardo Oliveiras" style="width: 100%;">
+                  <div class="transparency">
+                    <h1>Encanadores/h1>
+                    <p>Eduardo Oliveiras - Cód:11523</p>
+                    </div>
+          </div>
+
+          <div class="gallery_item eletricista">
+              <img src="./files/eletricista111-1600x900.jpeg" alt="Reginaldo Alegre" style="width: 100%;">
+              <div class="transparency">
+                <h1>Eletricistas</h1>
+                <p>Reginaldo Alegre - Cód:13028</p>
+                </div>
+          </div>
+
+          <div class="gallery_item construcao">
+              <img src="./files/construcao112-1600x900.jpg" alt="Reginaldo Farina" style="width: 100%;">
+              <div class="transparency">
+                <h1>Construção e Reforma</h1>
+                <p>Reginaldo Farina - Cód:13531</p>
+                </div>
+          </div>
+
+          <div class="gallery_item jardinagem">
+              <img src="./files/jardinagem112.jpg" alt="Andre & Livia" style="width: 100%;">
+              <div class="transparency">
+                <h1>Jardinagem e Paisagismo</h1>
+                <p>Andre & Livia - Cód:12026</p>
+                </div>
+          </div>
+
+          <div class="gallery_item encanador">
+              <img src="./files/encanador111-1200x800.jpeg" alt="img" style="width: 100%;">
+                  <div class="transparency">
+                    <h1>Encanadores</h1>
+                    <p>Paulo Marques - Cód:115278</p>
+                    </div>
+          </div>
+
+          <div class="gallery_item eletricista">
+              <img src="./files/eletricistas112-1200x800.jpg" alt="Luana Sonsa" style="width: 100%;">
+              <div class="transparency">
+                <h1>Eletricistas</h1>
+                <p>Luana Sonsa - Cód:13021</p>
+                </div>
+          </div>
+
+          <div class="gallery_item jardinagem">
+              <img src="./files/jardinagem 113 860x574.jpg" alt="Carlos Paulo" style="width: 100%;">
+                  <div class="transparency">
+                    <h1>Jardinagem e Paisagismo/h1>
+                    <p>Carlos Paulo - Cód:13528</p>
+                    </div>
+          </div>
+
+          <div class="gallery_item encanador">
+              <img src="./files/encanador112-1600x900.jpg" alt="img" style="width: 100%;">
+                  <div class="transparency">
+                    <h1>Encanadores</h1>
+                    <p>Ricardo Amorins - Cód:11520</p>
+                    </div>
+          </div>
+
+          <div class="gallery_item construcao">
+              <img src="./files/construcao 113 1117x768.jpg" alt="Sergio Nascimento" style="width: 100%;"> 
+              <div class="transparency">
+                <h1>Construção e Reforma</h1>
+                <p>Sergio Nascimento - Cód:13522</p>
+                </div>
+          </div>
+          <div class="gallery_item piscinas">
+            <img src="./files/piscinas111.jpg" alt="Aqua Splash" style="width: 100%;">
+            <div class="transparency">
+              <h1>Piscinas</h1>
+              <p>Aqua Splash - Cód:17024</p>
+              </div>
+        </div>
+        <div class="gallery_item piscinas">
+          <img src="./files/piscinas112-1200x800.jpg" alt="Agua Mania" style="width: 100%;">
+          <div class="transparency">
+            <h1>Piscinas</h1>
+            <p>Agua Mania - Cód:17026</p>
+          </div>
+        </div>
+        <div class="gallery_item piscinas">
+          <img src="./files/piscinas 113.jpg" alt="Aqua Play" style="width: 100%;">
+          <div class="transparency">
+            <h1>Piscinas</h1>
+            <p>Aqua Play - Cód:17025</p>
+          </div>
+        </div>
+        <div class="gallery_item cozinha">
+          <img src="./files/cozinheiros111-1600x900.jpg" alt="Amelia Sanches" style="width: 100%;">
+          <div class="transparency">
+            <h1>Cozinha</h1>
+            <p>Amelia Sanches - Cód:18025</p>
+          </div>
+        </div>
+        <div class="gallery_item cozinha">
+          <img src="./files/cozinheiros 112 - 1024x683.jpg" alt="Carolina Mont" style="width: 100%;">
+          <div class="transparency">
+            <h1>Cozinha</h1>
+            <p>Carolina Mont - Cód:18029</p>
+          </div>
+        </div>
+        <div class="gallery_item cozinha">
+          <img src="./files/cozinheiros 113 640x427.jpg" alt="Jacson Antonio" style="width: 100%;">
+          <div class="transparency">
+            <h1>Cozinha</h1>
+            <p>Jacson Antonio - Cód:18023</p>
+          </div>
+        </div>
+        <div class="gallery_item casalimp">
+          <img src="./files/domesticas111-1600x900.jpg" alt="Silvana Lima" style="width: 100%;">
+          <div class="transparency">
+            <h1>Limpesa de Casa</h1>
+            <p>Silvana Lima - Cód:19028</p>
+          </div>
+        </div>
+        <div class="gallery_item casalimp">
+          <img src="./files/domesticas 112 - 490x400.jpg" alt="Maria Souza Lima" style="width: 100%;">
+          <div class="transparency">
+            <h1>Limpesa de Casa</h1>
+            <p>Maria Souza Lima - Cód:19027</p>
+          </div>
+        </div>
+        <div class="gallery_item casalimp">
+          <img src="./files/domesticas 113 600x400.jpg" alt="Miriam Marcondes" style="width: 100%;">
+          <div class="transparency">
+            <h1>Limpesa de Casa</h1>
+            <p>Miriam Marcondes - Cód:19024</p>
+          </div>
+        </div>
+        <div class="gallery_item pets">
+          <img src="./files/pets111-1600x900.jpg" alt="Dra Silvia Amarante" style="width: 100%;">
+          <div class="transparency">
+            <h1>Pets - Banho e Tosa</h1>
+            <p>Dra Silvia Amarante - Cód:10014</p>
+          </div>
+        </div>
+        <div class="gallery_item pets">
+          <img src="./files/pets 1000x600 113.jpg" alt="Dr Ricardo Silva" style="width: 100%;">
+          <div class="transparency">
+            <h1>Pets - Clinica Veterinária</h1>
+            <p>Dr Ricardo Silva - Cód:10012</p>
+          </div>
+        </div>
+        <div class="gallery_item pets">
+          <img src="./files/pets 1400x800 111.jpg" alt="Dra Aline Amancio" style="width: 100%;">
+          <div class="transparency">
+            <h1>Pets - CliniVet</h1>
+            <p>Dra Aline Amancio - Cód:10011</p>
+          </div>
+        </div>
+        <div class="gallery_item pets">
+          <img src="./files/pets 1000x600 111.jpeg" alt="Dra Regina Prado" style="width: 100%;">
+          <div class="transparency">
+            <h1>Pets - LovePets</h1>
+            <p>Dra Regina Prado - Cód:10016</p>
+          </div>
+        </div>
+        <div class="gallery_item pets">
+          <button id="myBtn"><img src="./files/pets 800x600 111.jpg" onclick="mostrarDetalhes('drJonasMarcos')" alt="Dr Jonas Marcos" style="width: 100%;"></button>
+            <div class="transparency">
+            <h1>Pets - Banho e Tosa</h1>
+            <p>Dr Jonas Marcos - Cód:10017</p>
+          </div>
+          
+        </div>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Te Achei.</p>
+    <div id="detalhes"></div>
+  </div>
+  
+</div>
+      </div>
+      
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <div class="lightbox_wrapper" >
+      <div class="lightbox_content" >
+          <img src=""  class="lightbox_img" alt="lightbox-img">
+          
+      </div>
+     
+  </div>
+  <div class="lightbox_close">
+      <span></span>
+      <span></span>
+  </div>
+  <div class="lightbox_modal">
+    <span></span>
+    <span></span>
+</div>
+</div>
+</div>
+      
+
+  </section>
+  </main>  
+   
+  <!-- inicio rodape -->
+  <div class="content1">
+    <div class="text">Queremos saber de você, o que achou dessa página:</div>
+    <div class="p">Deixe sua sugestão para continuar-mos a trabalhar para melhor atende-los.</div>
+  </div>
+ 
+    <footer>  <!-- Letreiro deslizante -->
+      <div class="marquee">
+        <div class="marquee__item">
+          Tudo em Construção e Reforma
+          <span class="marquee__seperator"></span>
+          Serviços em Carpintaria e Marcenaria
+          <span class="marquee__seperator"></span>
+          Instalação e manutenção Eletrica
+          <span class="marquee__seperator"></span>
+          Àgua quente, água fria e tudo em Encanamentos
+          <span class="marquee__seperator"></span>
+          Construção, reforma, manutenção e Limpeza de Piscinas
+          <span class="marquee__seperator"></span>
+          Tudo em Jardinagem e Paisagismo
+          <span class="marquee__seperator"></span>
+          Limpesa de casas com diaristas ou mensalistas. E chefes de cozinha para sua casa ou restaurante.
+          <span class="marquee__seperator"></span>
+        
+        </div>
+      </div>
+     
+       <div class="main-content">  <!-- rodape -->
+        <div class="left box">
+          <h2>Sobre nós</h2>
+          <div class="content">
+            <p>Somos estudantes da PROZ AWS - no curso de Front-end, HTML CSS e javascript. E este é nosso trabalho de desenvovimento Web.</p>
+            <div class="social">
+              <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+              <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Endereço:</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">São Paulo, Brasil</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+011-765432100</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">estudantes@example.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Colaboradores</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Ernani</span>
+              <br>
+              <span class="text">Cynara</span>
+              <br>
+              <span class="text">Frederico</span>
+              <br>
+              <span class="text">Julio</span>
+              <br>
+              <span class="text">Rozvania</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+            
+    </footer>
+ 
+</body>
+
+</html>

@@ -12,13 +12,14 @@
  
   <!-- Link do nosso arquivo CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="chatbot.css">
-  <script src="index.js" defer></script>
-  <script src="chatbot.js" defer></script>
+  <link rel="stylesheet" href="contato.css">
+ 
+  <link rel="stylesheet" href="portifolio.css">
+  <script src="./index.js" defer></script>
+  <script src="portifolio.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/fonts-icones.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/fonts-icones.css">-->
   <title>Buscador de serviços gerais para o seu Lar.</title>
 </head>
 
@@ -27,12 +28,11 @@
   <header>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="./portifolio.html">Lista de Profissinais</a>
+      <a href="./index.html">Página Inicial</a>
       <a href="./Blog.html">Blog</a>
       <a href="./emconstrucao.html">Quem somos</a>
       <a href="./emconstrucao.html">Mapa do Site</a>
       <a href="./contato.html">Fale Conosco</a>
-      <a href="./login.html">Login</a>
     </div>
     
     <!-- Use qualquer elemento para abrir o sidenav -->
@@ -41,7 +41,7 @@
     <!-- Adicione todo o conteúdo da página dentro deste div se quiser que a navegação lateral empurre o conteúdo da página para a direita (não usado se você quiser apenas que a navegação lateral fique no topo da página -->
     <div id="main">
     <nav>
-      <div class="box">
+      <div class="boxSocial">
         <div class="icon">
           <i class='bx bx-menu open'></i>
           <i class='bx bx-x close' ></i>
@@ -96,118 +96,36 @@
     
   </header>
   <main>
-    <section>
-       <!-- Inicio GRID de profissionais -->
-      <div class="swiffy-slider">
-        <ul class="slider-container">
-            <div class="container">
-              <li><img src="./files/piscinas111.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Tudo para piscinas.</h1>
-                <p>Procurando construir, reformar, manutenção e limpeza?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
+    <section id="main" class="container medium">
+      <header>
+        <h2>Contato:</h2>
+        <p>Diga-nos o que você procura e nós ajudaremos a encontrar..</p>
+      </header>
+      <div class="boxForm">
+        <form method="post" action="#">
+          <div class="row gtr-50 gtr-uniform">
+            <div class="col-6 col-12-mobilep">
+              <input type="text" name="name" id="name" value="" placeholder="Nome" />
             </div>
-            <div class="container">
-              <li><img src="./files/jardinagem111.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Tudo para o seu Jardim.</h1>
-                <p>Procurando montagem, manutenção e limpeza?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
+            <div class="col-6 col-12-mobilep">
+              <input type="email" name="email" id="email" value="" placeholder="Email" />
             </div>
-            <div class="container">
-              <li><img src="./files/eletricistas113-1600x900.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Tudo em eletricidade.</h1>
-                <p>Procurando por reparo, manutenção e projeto eletreico do zero?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
+            <div class="col-12">
+              <input type="text" name="subject" id="subject" value="" placeholder="Assunto" />
             </div>
-            <div class="container">
-              <li><img src="./files/construcao112-1600x900.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Tudo em construção e reforma.</h1>
-                <p>Querendo construir ou reformar?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
+            <div class="col-12">
+              <textarea name="message" id="message" placeholder="Digita sua mensagem" rows="6"></textarea>
             </div>
-            <div class="container">
-              <li><img src="./files/encanador 115.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Tudo em hidraulica residencial e comercial.</h1>
-                <p>Querendo construir ou reformar?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
+            <div class="col-12">
+              <ul class="actions special">
+                <li><input type="submit" value="Enviar Mensagem" /></li>
+              </ul>
             </div>
-            <div class="container">
-              <li><img src="./files/cozinheiros111-1600x900.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Precisando de Chef de cozinha.</h1>
-                <p>Chefs para domicilio ou comercial?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
-            </div>
-            <div class="container">
-              <li><img src="./files/domesticas111-1600x900.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Procurando alguém para limpeza do Lar.</h1>
-                <p>diarista ou mensalista?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
-            </div>
-            <div class="container">
-              <li><img src="./files/pets111-1600x900.jpg" alt="Piscinas" style="width:90%;"></li>
-              <div class="content">
-                <h1>Temos uma infidade de serviços para o seu Pet.</h1>
-                <p>Precisando de ajuda com seu Pet?</p>
-                <p>Temos um especialista pronto para te atender e fazer um bom negocio!</p>
-              </div>
-            </div>
-            
-            
-        </ul>
-    
-        <button type="button" class="slider-nav"></button>
-        <button type="button" class="slider-nav slider-nav-next"></button>
-    
-        <div class="slider-indicators">
-            <button class="active"></button>
-            <button></button>
-            <button></button>
-        </div>
-    </div>
-  </section>
-  <section class="textsection1">
-    <br><br>
-    <h1>Buscador de profissionais especializados.</h1><br>
-    <h3> Tudo o que procura para o seu lar esta aqui.</h3><br><br>
-    <p> Serviços especializados.</p><br>
-    <p> Profissionais experientes.</p><br>
-    <p> Agilidade e eficiência,</p><br>
-    <p> com o mais importante, respeito pelo cliente e preços acessíveis.</p><br>
- 
-  <button class="chatbot-toggler">
-    <span class="material-symbols-rounded">Chat</span>
-    <span class="material-symbols-outlined">Fechar</span>
-  </button>
-  <div class="chatbot">
-    <header>
-      <h2>Digite sua mensagem</h2>
-      <span class="close-btn material-symbols-outlined">fechar</span>
-    </header>
-    <ul class="chatbox">
-      <li class="chat incoming">
-        <span class="material-symbols-outlined">Start</span>
-        <p>Olá!!! 👋<br>Como posso ajudá-lo hoje?</p>
-      </li>
-    </ul>
-    <div class="chat-input">
-      <textarea placeholder="Digita sua mensagem..." spellcheck="false" required></textarea>
-      <span id="send-btn" class="material-symbols-rounded">Enviar</span>
-    </div>
-  </div>
-</section>
+          </div>
+        </form>
+      </div>
+    </section>
+   
   </main>  
    
   <!-- inicio rodape -->
@@ -236,8 +154,8 @@
         
         </div>
       </div>
-      <!-- rodape -->
-       <div class="main-content"> 
+     
+       <div class="main-content">  <!-- rodape -->
         <div class="left box">
           <h2>Sobre nós</h2>
           <div class="content">
